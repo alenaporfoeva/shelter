@@ -80,7 +80,7 @@
     font-family: 'Georgia', serif;
 }
 
-.pets h4 {
+.pets h4, .pets h2 {
     font-size: 35px;
     font-weight: 400;
     line-height: 130%;

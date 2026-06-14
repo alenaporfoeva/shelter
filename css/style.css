@@ -32,9 +32,17 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to right, #5B483A, #262425);
     padding-top: 30px;
     padding-right: 40px;
+}
+
+.header-dark {
+    background: linear-gradient(to right, #5B483A, #262425);
+}
+
+.header-light {
+    background: #FFFFFF;
+    margin-bottom: 48px;
 }
 
 .logo {
@@ -43,15 +51,29 @@ body {
 }
 
 .logo h1 {
-    color: #F1CDB3;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+.logo-dark h1 {
+    color: #F1CDB3;
+}
+
+.logo-light h1 {
+    color: #545454;
+}
+
 .logo span {
-    color: #FFFFFF;
     display: block;
     margin-left: 4px;
+}
+
+.logo-dark span {
+    color: #FFFFFF;
+}
+
+.logo-light span {
+    color: #292929;
 }
 
 .nav-list {
@@ -62,15 +84,29 @@ body {
 
 .nav-link {
     display: block;
-    color: #CDCDCD;
     padding-bottom: 4px;
     border-bottom: 3px solid transparent;
 }
 
+.nav-link-dark {
+    color: #CDCDCD;
+}
+
+.nav-link-light {
+    color: #292929;
+}
+
 .nav-activated {
-    color: #FAFAFA;
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 4px;
+}
+
+.nav-link-dark .nav-activated {
+    color: #FAFAFA;
+}
+
+.nav-link-light .nav-activated {
+    color: #292929;
 }
 
 /* START SCREEN CONTENT */
@@ -148,7 +184,7 @@ body {
     align-items: center;
 }
 
-.pets h4 {
+.pets h4, .pets h2 {
     text-align: center;
     color: #545454;
     margin-bottom: 24px;
