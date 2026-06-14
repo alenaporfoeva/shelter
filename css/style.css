@@ -66,13 +66,7 @@ body {
     border-bottom: 3px solid transparent;
 }
 
-.nav-active {
-    pointer-events: none;
-    color: #FAFAFA;
-}
-
 .nav-activated {
-    pointer-events: none;
     color: #FAFAFA;
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 4px;
@@ -108,7 +102,32 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.primary:hover {
+  background-color: #FDDCC4;
+}
+
 .start-screen-puppy img {
-    padding-top: 50px;
-    margin: 40px;
+    padding-top: 90px;
+    margin-left: 40px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    padding-top: 80px;
+}
+
+.about-content {
+    padding-top: 14px;
+    padding-left: 120px;
+}
+
+.about-content h3 {
+    color: #545454;
+}
+
+.about-content span {
+    display: block;
+    padding-top: 25px;
 }
