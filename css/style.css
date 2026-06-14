@@ -51,6 +51,7 @@ body {
 .logo span {
     color: #FFFFFF;
     display: block;
+    margin-left: 4px;
 }
 
 .nav-list {
@@ -118,9 +119,13 @@ body {
     padding-top: 80px;
 }
 
+.about-pets {
+    transform: translateX(-10px);
+}
+
 .about-content {
-    padding-top: 14px;
-    padding-left: 120px;
+    padding-top: 10px;
+    padding-left: 110px;
 }
 
 .about-content h3 {
@@ -130,4 +135,100 @@ body {
 .about-content span {
     display: block;
     padding-top: 25px;
+}
+
+/* PETS */
+
+.pets {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 175px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pets h4 {
+    text-align: center;
+    color: #545454;
+    margin-bottom: 24px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 5px;
+}
+
+.cards-wrap {
+    display: flex;
+    gap: 90px;
+}
+
+.card {
+    background-color: #FAFAFA;
+    border-radius: 9px;
+    width: 270px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    height: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    color: #545454;
+    margin: 0 0 30px 0;
+}
+
+.button-secondary {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+    transition: 0.3s;
+}
+
+.button-secondary:hover {
+    background-color: #FDDCC4;
+}
+
+.button-arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: transparent;
+    color: #292929;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-top: 28px;
+}
+
+.button-arrow:hover {
+    background-color: #FDDCC4;
+}
+
+.button-primary {
+    display: inline-block;
+    padding: 15px 48px;
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+    transition: 0.3s;
+    margin-top: 57px;
+}
+
+.button-primary:hover {
+    background-color: #fddcc4;
 }
