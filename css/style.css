@@ -77,3 +77,38 @@ body {
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 4px;
 }
+
+/* START SCREEN CONTENT */
+
+.start-screen-content {
+    display: flex;
+    background: linear-gradient(to right, #5B483A, #262425);
+    padding-left: 40px;
+    width: 100%;
+}
+
+.content h2 {
+    color: #FFFFFF;
+    margin-top: 253px;
+}
+
+.content span {
+    display: block;
+    margin-top: 42px;
+    color: #CDCDCD;
+}
+
+.content .primary {
+    margin-top: 42px;
+    padding: 15px 45px 15px 45px;
+    background-color: #F1CDB3;
+    color: #292929;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-screen-puppy img {
+    padding-top: 50px;
+    margin: 40px;
+}
