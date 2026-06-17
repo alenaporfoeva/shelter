@@ -22,8 +22,10 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.container {
     max-width: 1280px;
-    margin: 0 auto;
 }
 
 /* HEADER */
@@ -46,9 +48,16 @@ body {
     margin-bottom: 48px;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .logo {
     display: block;
     padding-left: 40px;
+    cursor: default;
 }
 
 .logo h1 {
@@ -91,23 +100,25 @@ body {
 
 .nav-link-dark {
     color: #CDCDCD;
+    transition: color 0.3s ease;
+}
+
+.nav-link-dark:hover {
+    color: #FAFAFA;
 }
 
 .nav-link-light {
+    color: #545454;
+    transition: color 0.3s ease;
+}
+
+.nav-link-light:hover {
     color: #292929;
 }
 
 .nav-activated {
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 4px;
-}
-
-.nav-link-dark .nav-activated {
-    color: #FAFAFA;
-}
-
-.nav-link-light .nav-activated {
-    color: #292929;
 }
 
 /* START SCREEN CONTENT */
@@ -136,12 +147,13 @@ body {
     background-color: #F1CDB3;
     color: #292929;
     border-radius: 100px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .primary:hover {
-  background-color: #FDDCC4;
+    background-color: #FDDCC4;
 }
 
 .start-screen-puppy img {
@@ -154,15 +166,15 @@ body {
 .about {
     display: flex;
     padding-top: 80px;
+    gap: 110px;
 }
 
 .about-pets {
-    transform: translateX(-10px);
+    padding-left: -10px;
 }
 
 .about-content {
     padding-top: 10px;
-    padding-left: 110px;
 }
 
 .about-content h3 {
@@ -180,12 +192,16 @@ body {
     width: 100%;
     background-color: #F6F6F6;
     padding: 175px 40px;
+}
+
+.pets .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pets h4, .pets h2 {
+.pets h4,
+.pets h2 {
     text-align: center;
     color: #545454;
     margin-bottom: 24px;
@@ -194,13 +210,19 @@ body {
 .slider {
     display: flex;
     align-items: center;
-    gap: 50px;
+    width: 100%;
     margin-top: 5px;
 }
 
 .cards-wrap {
     display: flex;
-    gap: 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 40px;
+
+    max-width: 1280px;
+    width: 100%;
 }
 
 .card {
