@@ -39,7 +39,7 @@
     letter-spacing: 0%;
 }
 
-.content span {
+.content p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -65,7 +65,7 @@
     letter-spacing: 6%;
 }
 
-.about-content span {
+.about-content p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 15px;

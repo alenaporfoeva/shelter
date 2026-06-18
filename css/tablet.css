@@ -28,36 +28,33 @@
         align-items: flex-start;
         text-align: left;
 
-        max-width: 460px;
-        width: 100%;
+        width: 460px;
     }
 
     .content h2 {
         margin-top: 0;
     }
 
-    .content span {
+    .content p {
         margin-top: 40px;
-        text-align: left;
-
     }
 
     .content .primary {
-        margin-top: -5px;
+        margin-top: 42px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .start-screen-puppy {
-        margin-top: 100px;
-        width: 100%;
+        margin-top: -78px;
+        margin-right: -156px;
+        width: auto;
         display: flex;
         justify-content: flex-end;
     }
 
     .start-screen-puppy img {
-        max-width: 569px;
-        width: 100%;
+        width: 569px;
         height: auto;
         display: block;
     }
@@ -75,36 +72,75 @@
 
     .about-content {
         max-width: 430px;
-        padding: 0 30px;
-        text-align: center;
+        width: 100%;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .about-content span {
+    .about-content h3 {
+        margin-top: 0;
         text-align: left;
+    }
+
+    .about-content p {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .about-pets {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .about-pets img {
         max-width: 300px;
         width: 100%;
         height: auto;
+        display: block;
     }
 
     /* --- PETS --- */
     .pets-main {
-        padding: 80px 30px 100px 30px;
+        padding: 80px 0 0 0;
     }
 
     .pets-main .slider {
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        gap: 0;
+        min-height: 435px;
     }
 
     .pets-main .cards-wrap {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         gap: 40px;
         width: 580px;
         max-width: 580px;
-        justify-content: center;
+        margin: 0;
+        padding-right: 32px;
+    }
+
+    .pets-main .cards-wrap .card:nth-child(n+3) {
+        display: none;
+    }
+
+    .pets-main .card {
+        width: 270px;
+        flex-shrink: 0;
+    }
+
+    .pets-main .button-arrow:first-of-type {
+        margin-right: -20px;
+    }
+
+    .pets-main .button-arrow:last-of-type {
+        margin-left: -70px;
     }
 }
