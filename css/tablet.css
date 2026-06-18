@@ -1,6 +1,110 @@
-@media (min-width: 768px) and (max-width: 1439px) {
-    .page {
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    /* --- HEADER --- */
+    .container {
+        max-width: 708px;
+        padding: 0;
+    }
+
+    .header {
+        padding: 30px 30px 0 30px;
+    }
+
+    /* --- START SCREEN --- */
+    .start-screen-content {
+        padding: 0 156px;
+    }
+
+    .start-screen-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+        max-width: 460px;
         width: 100%;
     }
 
+    .content h2 {
+        margin-top: 0;
+    }
+
+    .content span {
+        margin-top: 40px;
+        text-align: left;
+
+    }
+
+    .content .primary {
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .start-screen-puppy {
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .start-screen-puppy img {
+        max-width: 569px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* --- ABOUT --- */
+    .about {
+        padding: 80px 0 100px 0;
+    }
+
+    .about-wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .about-content {
+        max-width: 430px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .about-content span {
+        text-align: left;
+    }
+
+    .about-pets img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* --- PETS --- */
+    .pets-main {
+        padding: 80px 30px 100px 30px;
+    }
+
+    .pets-main .slider {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+
+    .pets-main .cards-wrap {
+        display: flex;
+        gap: 40px;
+        width: 580px;
+        max-width: 580px;
+        justify-content: center;
+    }
 }
