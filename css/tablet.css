@@ -105,7 +105,7 @@
 
     /* --- PETS --- */
     .pets-main {
-        padding: 80px 0 0 0;
+        padding: 78px 0 0 0;
     }
 
     .pets-main .slider {
@@ -141,6 +141,47 @@
     }
 
     .pets-main .button-arrow:last-of-type {
-        margin-left: -70px;
+        margin-left: -58px;
+    }
+
+    .header-light {
+        padding-bottom: 34px;
+
+    }
+    .pets-page {
+        padding: 200px 0 100px 0;
+    }
+
+    .pets-page h4 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .pets-page .cards-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
+        max-width: 580px;
+        margin-top: -30px;
+    }
+
+    .pets-page .cards-wrap .card {
+        width: 270px;
+        flex-shrink: 0;
+        display: flex;
+    }
+
+    .pets-page .cards-wrap .card:nth-child(n+7) {
+        display: none;
+    }
+
+    .pets-page .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
     }
 }
