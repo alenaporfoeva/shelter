@@ -1,0 +1,232 @@
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 320px;
+        max-width: 320px;
+        overflow-x: hidden;
+        margin: 0 auto;
+        padding: 0;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .container,
+    .wrapper,
+    .start-screen-wrap,
+    .about-wrap {
+        width: 100%;
+        max-width: 320px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 30px 10px 0 10px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .start-screen-content {
+        padding-top: 150px;
+        width: 100%;
+    }
+
+    .start-screen-content .start-screen-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start-screen-content .content {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .start-screen-content .content h2 {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        max-width: 250px;
+        margin: 0 auto 20px auto;
+    }
+
+    .start-screen-content .content p {
+        font-size: 15px;
+        line-height: 24px;
+        width: 300px;
+        height: 96px;
+        margin-top: 22px;
+        margin-left: -42px;
+        padding-right: -10px;
+    }
+
+    .start-screen-content .content button.primary {
+        margin: 38px auto;
+        display: block;
+    }
+
+    .start-screen-content .start-screen-puppy {
+        width: 100%;
+        max-width: 320px;
+        margin: -105px auto 0 auto;
+        padding: 0;
+    }
+
+    .start-screen-content .start-screen-puppy img {
+        width: 260px;
+        max-width: 260px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about {
+        padding: 42px 0 42px 0;
+    }
+
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        order: 1;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-content h3 {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .about-content p {
+        font-size: 17px;
+        line-height: 24px;
+        text-align: justify;
+        margin-bottom: 22px;
+        margin-top: -28px;
+    }
+
+    .about-pets {
+        order: 2;
+        margin: 20px auto 0 auto;
+    }
+
+    .about-pets img {
+        width: 260px;
+        height: auto;
+        display: block;
+        margin-top: -120px
+    }
+
+    .pets-main {
+        padding: 42px 0 42px 0;
+    }
+
+    .pets-main h4 {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    .pets-main .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .pets-main .cards-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .pets-main .cards-wrap .card:nth-child(n+2) {
+        display: none;
+    }
+
+    .pets-main .card {
+        width: 270px;
+        flex-shrink: 0;
+    }
+
+    .pets-main .button-arrow {
+        position: absolute;
+        bottom: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .pets-main .button-arrow:first-of-type {
+        left: 50%;
+        margin-left: -90px;
+    }
+
+    .pets-main .button-arrow:last-of-type {
+        right: 50%;
+        margin-right: -90px;
+    }
+
+    .pets-main .button-primary {
+        margin-top: 42px;
+    }
+
+    .header-light {
+        padding-bottom: 34px;
+    }
+
+    .pets-page {
+        padding: 150px 0 100px 0;
+    }
+
+    .pets-page h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 13px;
+        margin-bottom: 120px;
+    }
+
+    .pets-page .cards-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
+        max-width: 580px;
+        margin-top: -80px;
+    }
+
+    .pets-page .cards-wrap .card {
+        width: 270px;
+        flex-shrink: 0;
+        display: flex;
+    }
+
+    .pets-page .cards-wrap .card:nth-child(n+4) {
+        display: none;
+    }
+
+    .pets-page .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        margin-top: 40px;
+    }
+}
