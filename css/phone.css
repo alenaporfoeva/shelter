@@ -2,10 +2,10 @@
 
     html,
     body {
-        width: 320px;
-        max-width: 320px;
+        width: 100%;
+        max-width: 100%;
         overflow-x: hidden;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         -webkit-text-size-adjust: 100%;
     }
