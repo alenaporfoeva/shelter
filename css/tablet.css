@@ -197,8 +197,12 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    .donation-dog {
-        padding-top: 28px;
 
+    .donation-dog {
+        padding-top: 22px;
+    }
+
+    .donation-card-btn {
+        margin-top: 3px;
     }
 }

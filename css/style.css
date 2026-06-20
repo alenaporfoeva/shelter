@@ -427,10 +427,6 @@ body {
 }
 
 .help-item-title {
-    font-family: 'Georgia', Georgia, serif;
-    font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
     color: #545454;
     font-weight: 400;
     margin: 0;
@@ -472,20 +468,11 @@ body {
 }
 
 .donation-content h3 {
-    font-family: 'Georgia', Georgia, serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: 0.06em;
     color: #545454;
     margin: 9px 0 20px 0;
 }
 
 .donation-content h5 {
-    font-family: 'Georgia', Georgia, serif;
-    font-size: 15px;
-    line-height: 110%;
-    letter-spacing: 0.06em;
     color: #545454;
     font-weight: 400;
     margin: 12px 0 20px 0;
@@ -503,18 +490,10 @@ body {
 }
 
 .donation-card-btn span {
-    font-family: 'Georgia', Georgia, serif;
-    font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
     color: #545454;
 }
 
 .donation-content p {
-    font-family: 'Arial', sans-serif;
-    font-style: italic;
-    font-size: 12px;
-    line-height: 150%;
     color: #B2B2B2;
     margin: 0;
 }

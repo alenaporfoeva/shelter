@@ -11,7 +11,6 @@
     }
 
     .container,
-    .wrapper,
     .start-screen-wrap,
     .about-wrap {
         width: 100%;
@@ -30,7 +29,7 @@
     }
 
     .start-screen-content {
-        padding-top: 150px;
+        padding-top: 152px;
         width: 100%;
     }
 
@@ -66,14 +65,14 @@
     }
 
     .start-screen-content .content button.primary {
-        margin: 38px auto;
+        margin: 40px auto;
         display: block;
     }
 
     .start-screen-content .start-screen-puppy {
         width: 100%;
         max-width: 320px;
-        margin: -105px auto 0 auto;
+        margin: -116px auto 0 auto;
         padding: 0;
     }
 
@@ -112,8 +111,8 @@
         font-size: 17px;
         line-height: 24px;
         text-align: justify;
-        margin-bottom: 22px;
-        margin-top: -28px;
+        margin-bottom: 20px;
+        margin-top: -24px;
     }
 
     .about-pets {
@@ -125,11 +124,11 @@
         width: 260px;
         height: auto;
         display: block;
-        margin-top: -120px
+        margin-top: -117px
     }
 
     .pets-main {
-        padding: 42px 0 42px 0;
+        padding: 40px 0 42px 0;
     }
 
     .pets-main h4 {
@@ -228,5 +227,132 @@
         align-items: center;
         gap: 11px;
         margin-top: 40px;
+    }
+
+    .pets-main h4 {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    .help h2 {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: -36px;
+    }
+
+    .help-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 29px 25px;
+        max-width: 290px;
+        margin: 43px auto;
+    }
+
+    .help-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        height: auto;
+    }
+
+    .help-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        object-fit: contain;
+    }
+
+    .help-item-title {
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .donation {
+        margin-top: 0;
+        background-color: #F6F6F6;
+    }
+
+    .donation-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 42px;
+        margin-top: -126px
+    }
+
+    .donation-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .donation-content h3 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .donation-content h5 {
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        max-width: 280px;
+        margin: 0 0 20px 0;
+    }
+
+    .donation-card-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F1CDB3;
+        border-radius: 9px;
+        gap: 15px;
+        width: 281px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .donation-card-btn img {
+        width: 30px;
+        height: auto;
+        margin-left: -4px;
+    }
+
+    .donation-card-btn span {
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+    .donation-content p {
+        font-family: 'Arial', sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: justify;
+    }
+
+    .donation-dog {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+    }
+
+    .donation-dog img {
+        width: 260px;
+        height: auto;
+        display: block;
     }
 }
