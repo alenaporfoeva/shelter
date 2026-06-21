@@ -94,6 +94,11 @@ body {
     color: #292929;
 }
 
+.navbar-burger {
+    display: none;
+    cursor: pointer;
+}
+
 .nav-list {
     display: flex;
     align-items: center;
@@ -159,9 +164,11 @@ body {
 }
 
 .content p {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 42px;
     color: #CDCDCD;
+    max-width: 460px;
 }
 
 .content .primary {
@@ -460,7 +467,6 @@ body {
     display: block;
     max-width: 505px;
     height: auto;
-    margin-top: -6px;
 }
 
 .donation-content {
@@ -475,7 +481,6 @@ body {
 .donation-content p {
     color: #545454;
     padding: 0;
-    margin-left: 2px;
     justify-content: center;
 
 }
@@ -488,15 +493,17 @@ body {
     border-radius: 9px;
     gap: 15px;
     text-decoration: none;
-    margin-top: 16px;
+    margin-top: 20px;
+    padding-bottom: 12px;
 }
 
 .donation-card-btn span {
     color: #545454;
+    margin-top: 2px;
 }
 
 .donation-content h4 {
     color: #B2B2B2;
     text-align: justify;
-    padding-top: 22px;
+    padding-top: 20px;
 }

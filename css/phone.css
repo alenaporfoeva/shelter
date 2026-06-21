@@ -28,6 +28,25 @@
         display: none;
     }
 
+    .navbar-burger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 2px;
+    }
+
+    .navbar-burger span {
+        width: 30px;
+        height: 2px;
+        background-color: #f1cdb3;
+        margin-left: 22px;
+    }
+
+    .header-wrap {
+        justify-content: flex-start;
+        gap: 41px;
+    }
+
     .start-screen-content {
         padding-top: 156px;
         width: 100%;
@@ -320,6 +339,7 @@
         height: auto;
         box-sizing: border-box;
         padding-top: 10px;
+        margin-top: -2px;
     }
 
     .donation-card-btn img {
@@ -346,7 +366,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: -10px;
+        margin-top: 2px;
     }
 
     .donation-dog img {
