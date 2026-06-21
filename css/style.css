@@ -294,7 +294,7 @@ body {
 
 .button-secondary {
     display: inline-block;
-    padding: 15px 45px;
+    padding: 15px 42px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     color: #292929;
@@ -449,7 +449,7 @@ body {
     justify-content: center;
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2px auto;
 }
 
 .donation-dog {
@@ -460,7 +460,7 @@ body {
     display: block;
     max-width: 505px;
     height: auto;
-    margin-top: 10px;
+    margin-top: -6px;
 }
 
 .donation-content {
@@ -469,13 +469,15 @@ body {
 
 .donation-content h3 {
     color: #545454;
-    margin: 9px 0 20px 0;
+    margin: 3px 0 20px 0;
 }
 
-.donation-content h5 {
+.donation-content p {
     color: #545454;
-    font-weight: 400;
-    margin: 12px 0 20px 0;
+    padding: 0;
+    margin-left: 2px;
+    justify-content: center;
+
 }
 
 .donation-card-btn {
@@ -486,14 +488,15 @@ body {
     border-radius: 9px;
     gap: 15px;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-top: 16px;
 }
 
 .donation-card-btn span {
     color: #545454;
 }
 
-.donation-content p {
+.donation-content h4 {
     color: #B2B2B2;
-    margin: 0;
+    text-align: justify;
+    padding-top: 22px;
 }

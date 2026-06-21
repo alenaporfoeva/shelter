@@ -189,8 +189,12 @@
         margin-top: 40px;
     }
 
+    .help {
+        margin-bottom: -3px;
+    }
+
     .donation {
-        padding-top: 64px;
+        padding-top: 66px;
     }
 
     .donation-wrap {
@@ -199,10 +203,15 @@
     }
 
     .donation-dog {
-        padding-top: 22px;
+        padding-top: 16px;
     }
 
     .donation-card-btn {
         margin-top: 3px;
+        padding-top: 10px;
+    }
+
+    .donation-content h4 {
+        margin-top: 2px;
     }
 }
