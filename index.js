@@ -1,28 +1,56 @@
-console.log("Self-assessment (Total: 65 points)\n\n" +
-"=== Main page (41 points) ===\n" +
-"1. Markup validation (+10):\n" +
-"   - [+5] Markup is valid per w3.org (No errors or warnings)\n" +
-"   - [+5] Logo is text-based, exactly one <h1>, favicon added\n" +
-"2. Layout matches the design (+19):\n" +
-"   - [+4] <header> block\n" +
-"   - [+5] Not only block\n" +
-"   - [+5] About block\n" +
-"   - [+5] Our Friends block\n" +
-"3. CSS requirements (+10):\n" +
-"   - [+5] Layout stays centered on wide screens (>1280px)\n" +
-"   - [+5] Background color stretches across the full page width\n" +
-"4. Interactivity (+2):\n" +
-"   - [+2] 'About the Shelter' link is active/non-interactive, smooth scrolling works, all links behave correctly\n\n" +
-"=== Pets page (24 points) ===\n" +
-"1. Markup validation (+10):\n" +
-"   - [+5] Markup is valid per w3.org (No errors or warnings)\n" +
-"   - [+5] Logo is text-based, exactly one <h1>, favicon added\n" +
-"2. Layout matches the design (+7):\n" +
-"   - [+5] <header> block\n" +
-"   - [+2] Our Friends block\n" +
-"3. CSS requirements (+5):\n" +
-"   - [+5] Layout stays centered (>1280px) & background stretches full width\n" +
-"4. Interactivity (+2):\n" +
-"   - [+2] 'Our pets' link is active, pagination buttons states are correct, smooth scrolling works\n\n" +
-"=================================\n" +
-"Total Score: 65 points");
+// BURGER-MENU
+
+const burgerButtons = document.querySelectorAll(".navbar-burger");
+const mobileMenus = document.querySelectorAll(".nav");
+const mobileLinks = document.querySelectorAll(".nav-link");
+
+function closeMenu() {
+  burgerButtons.forEach((button) => {
+    button.classList.remove("open");
+    button.setAttribute("aria-expanded", "false");
+  });
+
+  mobileMenus.forEach((menu) => {
+    menu.classList.remove("open");
+  });
+
+  document.body.classList.remove("menu-open");
+}
+
+function openMenu() {
+  burgerButtons.forEach((button) => {
+    button.classList.add("open");
+    button.setAttribute("aria-expanded", "true");
+  });
+
+  mobileMenus.forEach((menu) => {
+    menu.classList.add("open");
+  });
+
+  document.body.classList.add("menu-open");
+}
+
+burgerButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = button.classList.contains("open");
+
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+});
+
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    closeMenu();
+  }
+});
