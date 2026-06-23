@@ -296,7 +296,8 @@ body {
 
 .card-title {
     color: #545454;
-    margin: 0 0 31px 0;
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .button-secondary {
@@ -408,15 +409,26 @@ body {
 }
 
 .pets-page .cards-wrap {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     row-gap: 30px;
-    width: 1200px;
+    width: 100%;
     max-width: 1200px;
-    justify-content: space-between;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
 }
 
+.pets-page .cards-wrap.fade {
+    opacity: 0;
+}
+
+.button-arrow:disabled {
+    border-color: #CDCDCD;
+    color: #CDCDCD;
+    cursor: default;
+    background-color: transparent;
+}
 /* HELP */
 
 .help {
