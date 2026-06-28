@@ -115,9 +115,17 @@
     .pets-main .slider {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        max-width: 708px;
         width: 100%;
-        min-height: 435px;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .slider-window {
+        width: 100%;
+        max-width: 580px;
+        overflow: hidden;
     }
 
     .pets-main .cards-wrap {
@@ -125,7 +133,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 40px;
-        width: 580px;
+        width: 100%;
         max-width: 580px;
         margin: 0;
         padding-right: 32px;
@@ -145,7 +153,12 @@
     }
 
     .pets-main .button-arrow:last-of-type {
-        margin-left: -58px;
+        margin-left: -20px;
+    }
+
+    .button-arrow {
+        flex-shrink: 0;
+        margin: 0;
     }
 
     .header-light {

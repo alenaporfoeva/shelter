@@ -33,12 +33,8 @@ body {
 /* HEADER */
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 30px 40px 0 40px;
-    z-index: 10;
 }
 
 .header-dark {
@@ -296,12 +292,14 @@ body {
 
 .card-title {
     color: #545454;
-    margin: 0 0 31px 0;
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .button-secondary {
     display: inline-block;
     padding: 15px 42px;
+    background-color: transparent;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     color: #292929;
@@ -353,6 +351,22 @@ body {
     background-color: #FDDCC4;
 }
 
+.slider-window {
+    overflow: hidden;
+    width: 100%;
+}
+.slider-track {
+    display: flex;
+    transition: none;
+}
+.slider-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -391,15 +405,26 @@ body {
 }
 
 .pets-page .cards-wrap {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     row-gap: 30px;
-    width: 1200px;
+    width: 100%;
     max-width: 1200px;
-    justify-content: space-between;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
 }
 
+.pets-page .cards-wrap.fade {
+    opacity: 0;
+}
+
+.button-arrow:disabled {
+    border-color: #CDCDCD;
+    color: #CDCDCD;
+    cursor: default;
+    background-color: transparent;
+}
 /* HELP */
 
 .help {
