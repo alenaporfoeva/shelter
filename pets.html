@@ -8,7 +8,6 @@
     <link rel="icon" href="assets/img/pets-jennifer.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/typography.css" />
-    <link rel="stylesheet" href="css/desktop.css" />
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/phone.css" />
 </head>
@@ -89,16 +88,17 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <button class="button-arrow">&lt;&lt;</button>
-                    <button class="button-arrow">&lt;</button>
-                    <button class="button-arrow active">1</button>
-                    <button class="button-arrow">&gt;</button>
-                    <button class="button-arrow">&gt;&gt;</button>
+                    <button class="button-arrow" id="btn-first" disabled>&lt;&lt;</button>
+                    <button class="button-arrow" id="btn-prev" disabled>&lt;</button>
+                    <button class="button-arrow active" id="page-num">1</button>
+                    <button class="button-arrow" id="btn-next">&gt;</button>
+                    <button class="button-arrow" id="btn-last">&gt;&gt;</button>
                 </div>
             </div>
         </section>
     </div>
-    <script src="index.js"></script>
+    <script src="burger.js"></script>
+    <script src="pets.js"></script>
 </body>
 
 </html>
