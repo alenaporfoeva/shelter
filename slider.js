@@ -54,7 +54,7 @@ function createGroupHtml(group) {
 
 function initSlider() {
   track.innerHTML = '';
-  const shuffled = [...petsData].sort(() => Math.random() - 0.5);
+  const shuffled = [...petsData].sort(() => Math.random());
   currentGroup = shuffled.slice(0, getCardsCount());
 
   const initialHtml = createGroupHtml(currentGroup);
